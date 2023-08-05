@@ -1,6 +1,7 @@
 import React from 'react';
 import './Nav.css'
 import Logo from '../../assets/Logo.png'
+import Button from '../Button/Button';
 
 const Nav = () => {
     return (
@@ -11,12 +12,10 @@ const Nav = () => {
                     <span>MetaVerse</span>
                 </div>
                 <div className="nav-elements">
-                    <a href="#">Home</a>
-                    <a href="#">Community</a>
-                    <a href="#">Features</a>
-                    <div className="nav-cta">
-                        <a href="#">Sign In</a>
-                    </div>
+                    <a className='nav-links nav-active' href="#">Home</a>
+                    <a className='nav-links' href="#">Community</a>
+                    <a className='nav-links' href="#">Features</a>
+                    <Button />
                 </div>
             </nav>
         </div>

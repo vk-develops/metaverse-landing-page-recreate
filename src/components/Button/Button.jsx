@@ -3,7 +3,9 @@ import "./Button.css";
 
 const Button = () => {
     return (
-        <div>Button</div>
+        <div className="cta">
+            <a href="#">Sign Up</a>
+        </div>
     );
 }
 
