@@ -15,7 +15,7 @@ const Nav = () => {
                     <a className='nav-links nav-active' href="#">Home</a>
                     <a className='nav-links' href="#">Community</a>
                     <a className='nav-links' href="#">Features</a>
-                    <Button />
+                    <Button title="Sign up" />
                 </div>
             </nav>
         </div>
