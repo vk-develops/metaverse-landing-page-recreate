@@ -7,6 +7,8 @@
     justify-content: space-between;
     background-color: rgb(29, 81, 254, .1);
     backdrop-filter: blur(20px);
+    position: fixed;
+    z-index: 10;
 }
 .navigation .nav-logo{
     display: flex;
@@ -63,4 +65,13 @@
 .navigation .nav-elements .nav-active:hover::after{
     width: 100%;
     transition: 0.3s;
+}
+
+@media only screen and (max-width: 800px) {
+    .navigation{
+        justify-content: center;
+    }
+    .navigation .nav-elements{
+        display: none;
+    }
 }

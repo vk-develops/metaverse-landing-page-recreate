@@ -1,0 +1,8 @@
+.circle{
+    height: 350px;
+    width: 350px;
+    background-color: var(--primary-color);
+    filter: blur(200px);
+    border-radius: 50%;
+    position: absolute;
+}
