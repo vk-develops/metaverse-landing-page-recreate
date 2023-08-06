@@ -3,13 +3,15 @@ import './Nav.css'
 import Logo from '../../assets/Logo.png'
 import Button from '../Button/Button';
 import { useRef } from 'react';
+import { BiMenuAltRight } from "react-icons/bi";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 const Nav = () => {
 
     const navRef = useRef();
 
-    const showNav = () => {
-        navRef.current.classList.toggle("Responsive-nav");
+    const showMenu = () => {
+        navRef.current.classList.toggle("not-active");
     }
 
     return (
@@ -25,13 +27,21 @@ const Nav = () => {
                     <a className='nav-links' href="#">Features</a>
                     <Button title="Sign up" />
                 </div>
+                <div className="nav-toggler">
+                    <BiMenuAltRight size={32} type='button' onClick={() => showMenu()} />
+                </div>
             </nav>
-            <div className="responsive-nav-elements">
+            <div className="responsive-nav-elements" ref={navRef}>
+                <div className="res-nav-btn">
+                    <AiFillCloseCircle size={32} type='button' onClick={() => showMenu()} />
+                </div>
+                <div className="res-nav">
                     <a className='nav-links nav-active' href="#">Home</a>
                     <a className='nav-links' href="#">Community</a>
                     <a className='nav-links' href="#">Features</a>
                     <Button title="Sign up" />
                 </div>
+            </div>
         </div>
     );
 }

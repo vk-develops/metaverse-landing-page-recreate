@@ -66,13 +66,81 @@
     width: 100%;
     transition: 0.3s;
 }
+.navigation .nav-toggler{
+    display: none;
+}
 
 @media only screen and (max-width: 800px) {
-    .navigation{
-        justify-content: center;
-    }
     .navigation .nav-elements{
         display: none;
+    }
+    .responsive-nav-elements{
+        display: block;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(29, 81, 254, .05);
+        backdrop-filter: blur(100px);
+        z-index: 20;
+    }
+    .responsive-nav-elements .res-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .responsive-nav-elements .res-nav .nav-links{
+        color: var(--white);
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+    }
+    .responsive-nav-elements .res-nav .nav-links::after{
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: var(--white);
+        display: block;
+        transition: 0.3s;
+    }
+    .responsive-nav-elements .res-nav .nav-links:hover::after{
+        width: 100%;
+        transition: 0.3s;
+    }
+    .responsive-nav-elements .res-nav .nav-active{
+        color: var(--primary-color);
+    }
+    .responsive-nav-elements .res-nav .nav-active::after{
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: var(--primary-color);
+        display: block;
+        transition: 0.3s;
+    }
+    .responsive-nav-elements .res-nav .nav-active:hover::after{
+        width: 100%;
+        transition: 0.3s;
+    }
+    .responsive-nav-elements .res-nav-btn{
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        cursor: pointer;
+    }
+    .not-active{
+        left: -100%;
+    }
+    .navigation .nav-toggler{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        cursor: pointer;
     }
 }
 @media only screen and (min-width: 880px) {
