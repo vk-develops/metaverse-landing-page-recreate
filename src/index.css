@@ -11,7 +11,7 @@
 :root{
     --primary-color: #1D51FE;
     --white: #fff;
-    --white-light: rgb(255, 255, 255, 0.85);
+    --white-light: rgba(255, 255, 255, 0.85);
     --black: #0a0a0a;
 }
 
@@ -56,6 +56,20 @@ img{
     font-size: 14px;
     font-family: "Inter", sans-serif;
     color: var(--white-light);
+    font-weight: 400;
+}
+
+.heading-very-small{
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.paragraph-very-small{
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+    color: #878787;
     font-weight: 400;
 }
 
