@@ -10,8 +10,14 @@ const Nav = () => {
 
     const navRef = useRef();
 
+    const hideMenu = () => {
+        navRef.current.style.transition = "0.3s";
+        navRef.current.style.left = "-100%";
+    }
+
     const showMenu = () => {
-        navRef.current.classList.toggle("not-active");
+        navRef.current.style.transition = "0.3s";
+        navRef.current.style.left = "0";
     }
 
     return (
@@ -33,7 +39,7 @@ const Nav = () => {
             </nav>
             <div className="responsive-nav-elements" ref={navRef}>
                 <div className="res-nav-btn">
-                    <AiFillCloseCircle size={32} type='button' onClick={() => showMenu()} />
+                    <AiFillCloseCircle size={32} type='button' onClick={() => hideMenu()} />
                 </div>
                 <div className="res-nav">
                     <a className='nav-links nav-active' href="#">Home</a>

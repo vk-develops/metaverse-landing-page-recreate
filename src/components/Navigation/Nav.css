@@ -75,15 +75,15 @@
         display: none;
     }
     .responsive-nav-elements{
-        display: block;
         height: 100vh;
         width: 100%;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -100%;
         background-color: rgb(29, 81, 254, .05);
         backdrop-filter: blur(100px);
         z-index: 20;
+        transition: 0.3s;
     }
     .responsive-nav-elements .res-nav{
         display: flex;
