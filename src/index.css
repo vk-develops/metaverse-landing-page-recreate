@@ -76,3 +76,11 @@ img{
     font-weight: 400;
 }
 
+@media only screen and (max-width: 470px) {
+    .heading{
+        font-size: 32px;
+    }
+    .paragraph{
+        font-size: 14px;
+    }
+}
