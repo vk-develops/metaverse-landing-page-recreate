@@ -1,11 +1,13 @@
 import React from 'react';
 import "./Explore.css";
 import ExploreImg from "../../assets/Explore-Img.png";
-import { AiOutlineArrowRight } from "react-icons/ai"
+import { AiOutlineArrowRight } from "react-icons/ai";
+import Circle from "../Circle/Circle";
 
 const Explore = () => {
     return (
         <section className="explore-section">
+            <Circle />
             <div className="explore-left">
                 <img src={ExploreImg} alt="Image" />
             </div>
