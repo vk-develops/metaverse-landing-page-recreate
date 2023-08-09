@@ -43,6 +43,13 @@
 .experience-section .experience-contents .experience-left{
     width: 40%;
 }
+.experience-section .experience-contents .experience-left,
+.experience-section .experience-contents .experience-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
 .experience-section .experience-contents .experience-left img,
 .experience-section .experience-contents .experience-right img{
     width: 100%;
@@ -71,12 +78,27 @@
         font-size: 32px;
     }
 }
+@media only screen and (max-width: 430px){
+    .experience-section .experience-video .img-overlay h1{
+        font-size: 22px;
+    }
+}
 @media only screen and (max-width: 870px){
     .experience-section .experience-contents{
         flex-wrap: wrap;
+        margin-top: 10px;
     }
     .experience-section .experience-contents .experience-left,
     .experience-section .experience-contents .experience-right{
         width: 100%;
+    }
+    .experience-section .experience-contents .experience-left{
+        flex-direction: column;
+    }
+    .experience-section .experience-contents p{
+        padding-bottom: 35px;
+    }
+    .experience-section .experience-contents .experience-right p{
+        padding-bottom: 30px;
     }
 }
