@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    flex-direction: column;
 }
 .experience-section .experience-video{
     width: 100%;
@@ -30,4 +31,32 @@
 }
 .experience-section .experience-video .img-overlay h1 span{
     color: var(--black);
+}
+.experience-section .experience-contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    margin-top: 80px;
+}
+.experience-section .experience-contents .experience-left{
+    width: 40%;
+}
+.experience-section .experience-contents .experience-left img,
+.experience-section .experience-contents .experience-right img{
+    width: 100%;
+    height: auto;
+}
+.experience-section .experience-contents .experience-right{
+    width: 60%;
+}
+.experience-section .experience-contents .experience-left .left-texts h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.experience-section .experience-contents .experience-right p{
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 18px;
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Experience.css";
 import ExperienceGIF from "../../assets/Experience-Gif.gif";
+import ExperienceRightGIF from "../../assets/Big-Gif.gif";
+import ExperienceLeftGIF from "../../assets/Small-Gif.gif";
 
 const Experience = () => {
     return (
@@ -12,8 +14,17 @@ const Experience = () => {
                 </div>
             </div>
             <div className="experience-contents">
-                <div className="experience-left"></div>
-                <div className="experience-right"></div>
+                <div className="experience-left">
+                    <img src={ExperienceRightGIF} alt="" />
+                    <div className="left-texts">
+                        <h1 className="heading">Join communities</h1>
+                        <p className='paragraph'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from It is a long established fact that a reader will be distracted by</p>
+                    </div>
+                </div>
+                <div className="experience-right">
+                    <p className='paragraph'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                    <img src={ExperienceLeftGIF} alt="" />
+                </div>
             </div>
         </section>
     );
