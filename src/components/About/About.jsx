@@ -11,10 +11,10 @@ const About = () => {
     return (
         <section className="about-section">
             <div className="about-left">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                <Card image={MetaImg} title="Metaverse" para="With virtual technology you can see the digital world." />
+                <Card image={CompassImg} title="Make your Path" para="The lorem ipsum is virtual technology you can see the digital world." />
+                <Card image={DiceImg} title="The Fun Part" para="The lorem ipsum is virtual technology you can see the digital world."  />
+                <Card image={ThunderImg} title="Lightning Fast" para="With virtual technology you can see the digital world."  />
             </div>
             <div className="about-right">
                 <div className="about-right-contents">

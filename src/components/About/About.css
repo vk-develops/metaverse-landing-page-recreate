@@ -7,10 +7,26 @@
     justify-content: center;
     gap: 50px;
 }
+.about-section .about-right,
+.about-section .about-left{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about-section .about-right{
+    width: 35%;
+}
+.about-section .about-left{
+    width: 65%;
+}
 .about-section .about-right p{
     padding-top: 20px;
 }
 .about-section .about-left{
-    display: grid;
-    grid-template-columns: 2fr;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.about-section .about-left .card{
+    width: 50%;
 }

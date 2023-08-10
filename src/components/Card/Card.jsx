@@ -2,15 +2,15 @@ import React from 'react';
 import "./Card.css";
 import CompassImg from "../../assets/Compass.png";
 
-const Card = () => {
+const Card = (props) => {
     return (
         <div className="card">
             <div className="card-head">
-                <img src={CompassImg} alt="" />
-                <h3 className="heading-small">Metaverse</h3>
+                <img src={props.image} alt="" />
+                <h3 className="heading-small"> {props.title} </h3>
             </div>
             <div className="card-texts">
-                <p className='paragraph'>The lorem ipsum is virtual <br /> technology you can see the digital world.</p>
+                <p className='paragraph'> {props.para} </p>
             </div>
         </div>
     );
