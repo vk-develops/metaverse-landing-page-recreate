@@ -30,7 +30,7 @@
     font-size: 3.3rem;
 }
 .experience-section .experience-video .img-overlay h1 span{
-    color: var(--black);
+    color: var(--primary-color);
 }
 .experience-section .experience-contents{
     display: flex;

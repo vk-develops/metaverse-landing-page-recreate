@@ -30,3 +30,24 @@
 .about-section .about-left .card{
     width: 50%;
 }
+
+@media only screen and (max-width: 910px) {
+    .about-section{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .about-section .about-right,
+    .about-section .about-left{
+    width: 100%;
+}
+    .about-section .about-left{
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    .about-section .about-left .card{
+        width: 100%;
+    }
+    .about-section .about-right{
+        margin-bottom: -30px;
+    }
+}
