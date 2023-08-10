@@ -16,7 +16,7 @@ const Experience = () => {
             <div className="experience-contents">
                 <div className="experience-left">
                     <div className="left-texts">
-                        <h1 className="heading">Join communities</h1>
+                        <h1 className="heading-small">Join communities</h1>
                         <p className='paragraph'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from It is a long established fact that a reader will be distracted by</p>
                     </div>
                     <img src={ExperienceRightGIF} alt="" />

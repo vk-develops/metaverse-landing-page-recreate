@@ -1,0 +1,9 @@
+.about-section{
+    height: auto;
+    width: 100%;
+    padding: 5% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
