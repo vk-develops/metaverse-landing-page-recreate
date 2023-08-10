@@ -5,5 +5,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
+}
+.about-section .about-right p{
+    padding-top: 20px;
+}
+.about-section .about-left{
+    display: grid;
+    grid-template-columns: 2fr;
 }

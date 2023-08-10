@@ -1,0 +1,16 @@
+.card{
+    background-color: black;
+    padding: 35px;
+}
+.card-head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 25px;
+}
+.card-head img{
+    width: 30px;
+}
+.card-texts p{
+    padding-bottom: 5px;
+}
