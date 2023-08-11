@@ -155,7 +155,7 @@
     text-align: center;
 }
 .copyrights a{
-    color: var(--primary-color);
+    color: var(--white);
 }
 
 @media only screen and (max-width: 900px) {
