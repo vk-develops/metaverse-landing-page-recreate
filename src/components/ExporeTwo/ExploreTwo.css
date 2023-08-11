@@ -1,0 +1,19 @@
+.exploretwo-section{
+    height: auto;
+    width: 100%;
+    padding: 5% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exploretwo-section .exploretwo-left .left-contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exploretwo-section .exploretwo-left .left-contents .img-box{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}

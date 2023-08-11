@@ -9,7 +9,7 @@
     position: relative;
 }
 .explore-section .circle{
-    top: 200px;
+    top: -100px;
     left: -200px;
     z-index: -1;
 }

@@ -6,6 +6,12 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+    position: relative;
+}
+.about-section .circle{
+    bottom: -50px;
+    right: 0px;
+    z-index: -1;
 }
 .about-section .about-right,
 .about-section .about-left{

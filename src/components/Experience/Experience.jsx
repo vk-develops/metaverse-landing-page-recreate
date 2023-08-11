@@ -19,10 +19,10 @@ const Experience = () => {
                         <h1 className="heading-small">Join communities</h1>
                         <p className='paragraph'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from It is a long established fact that a reader will be distracted by</p>
                     </div>
-                    <img src={ExperienceRightGIF} alt="" />
+                    <img src={ExperienceLeftGIF} alt="" />
                 </div>
                 <div className="experience-right">
-                    <img src={ExperienceLeftGIF} alt="" />
+                    <img src={ExperienceRightGIF} alt="" />
                     <p className='paragraph'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
                 </div>
             </div>
