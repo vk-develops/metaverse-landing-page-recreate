@@ -5,7 +5,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: relative;
+}
+.exploretwo-section .circle{
+    bottom: -100px;
+    right: 0px;
+    z-index: -1;
 }
 .exploretwo-section .exploretwo{
     display: flex;
@@ -47,4 +52,11 @@
 }
 .exploretwo-section .exploretwo-contents .exploretwo-texts .explore-sub-link:hover{
     gap: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .exploretwo-section .exploretwo{
+        flex-wrap: wrap;
+        gap: 25px;
+    }
 }

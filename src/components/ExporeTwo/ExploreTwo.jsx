@@ -3,10 +3,12 @@ import "./ExploreTwo.css";
 import ExploreTwoLeft from "../../assets/ExploreTwo-Left.png";
 import ExploreTwoRight from "../../assets/ExploreTwo-Right.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Circle from "../Circle/Circle"
 
 const ExploreTwo = () => {
     return (
         <section className="exploretwo-section">
+            <Circle />
             <div className="exploretwo">
                 <div className="exploretwo-left">
                     <div className="exploretwo-contents">

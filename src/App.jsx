@@ -5,6 +5,7 @@ import Explore from './components/Explore/Explore';
 import Experience from './components/Experience/Experience';
 import About from './components/About/About';
 import ExploreTwo from './components/ExporeTwo/ExploreTwo';
+import Footer from './components/Footer/Footer';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Experience />
             <Explore />
             <ExploreTwo />
+            <Footer />
         </div>
     );
 }
