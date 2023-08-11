@@ -2,6 +2,7 @@ import React from 'react';
 import "./Footer.css";
 import Logo from "../../assets/Logo.png";
 import LogoWhite from "../../assets/LogoWhite.png";
+import { FaFacebookF, FaInstagram, FaTwitter, FaDiscord } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -23,6 +24,12 @@ const Footer = () => {
                     <img src={LogoWhite} alt="" />
                     <div className="about-contents">
                         <p className='paragraph'> <strong>Metaverse</strong> is a variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+                        <div className="icons">
+                            <a href="#"><FaFacebookF color='#fff' size={24} /></a>
+                            <a href="#"><FaInstagram color='#fff' size={24} /></a>
+                            <a href="#"><FaDiscord color='#fff' size={24} /></a>
+                            <a href="#"><FaTwitter color='#fff' size={24} /></a>
+                        </div>
                     </div>
                 </div>
                 <div className="link">
@@ -55,6 +62,10 @@ const Footer = () => {
                         </form>
                     </div>
                 </div>
+            </div>
+            <hr className='line' />
+            <div className="copyrights">
+                <h5 className='heading-very-small'>Developed by <a href="https://www.instagram.com/itz__vimal__93/">Vimal Kumar. V</a></h5>
             </div>
         </section>
     );
