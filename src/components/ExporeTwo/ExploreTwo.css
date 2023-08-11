@@ -5,15 +5,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
-.exploretwo-section .exploretwo-left .left-contents{
+.exploretwo-section .exploretwo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%;
+    padding: 50px;
+    border-radius: 35px;
+    border: 1px solid rgb(255, 255, 255, .3);
+}
+.exploretwo-section .exploretwo-contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.exploretwo-section .exploretwo-contents .img-box{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.exploretwo-section .exploretwo-left .left-contents .img-box{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    overflow: hidden;
+.exploretwo-section .exploretwo-contents .exploretwo-texts .explore-sub-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.exploretwo-section .exploretwo-contents .exploretwo-texts .explore-sub-link a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.exploretwo-section .exploretwo-contents .exploretwo-texts .explore-sub-link:hover{
+    gap: 20px;
 }
